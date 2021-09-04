@@ -63,6 +63,35 @@ a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+Link {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font-family: "Montserrat", sans-serif;
+  color: #434040;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #33c257;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+Link:hover {
+  color: #33c257;
+}
+Link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .nav__btn {
   width: 140px;
   height: 55px;
@@ -82,6 +111,6 @@ a:hover::after {
 .line {
   width: 100%;
   height: 1px;
-  margin: 12px 0px;
+  margin-top: 12px;
   background-color: #e2e0e0;
 }

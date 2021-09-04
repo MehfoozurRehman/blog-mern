@@ -1,6 +1,7 @@
 import React from "react";
 import "../Screens/HomeScreen.scss";
 import blog__bg from "../Assests/blog__bg.png";
+import { Link } from "react-router-dom";
 
 export default function LatestBlogCardComponent() {
   return (
@@ -41,7 +42,8 @@ export default function LatestBlogCardComponent() {
       <div className="latest__blog__heading">
         Palatial, palatable Portugal: a long weekend.
       </div>
-      <a
+      <Link
+        to="/blog"
         style={{
           fontSize: "14px",
           color: "#33c257",
@@ -50,7 +52,7 @@ export default function LatestBlogCardComponent() {
         }}
       >
         Read more
-      </a>
+      </Link>
     </div>
   );
 }
