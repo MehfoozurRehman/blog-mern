@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.scss";
 import BottonComponent from "./BottonComponent";
 export default function HeaderComponent() {
   return (
     <div className="header">
       <div className="nav__bar">
-        <div className="nav__bar__logo">MY BLOG</div>
+        <div className="nav__bar__logo">
+          <Link to="/">MY BLOG</Link>
+        </div>
         <div className="nav__bar__items">
           <ul>
             <li>

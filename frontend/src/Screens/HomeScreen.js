@@ -5,10 +5,11 @@ import HeaderComponent from "../Component/HeaderComponent";
 
 import "./HomeScreen.scss";
 import LatestBlogCardComponent from "../Component/LatestBlogCardComponent";
+import FooterComponent from "../Component/FooterComponent";
 
 export default function HomeScreen() {
   return (
-    <div className="header">
+    <>
       <HeaderComponent />
       <div className="container__content">
         <div className="content__left">
@@ -65,6 +66,7 @@ faces"
         <LatestBlogCardComponent />
         <LatestBlogCardComponent />
       </div>
-    </div>
+      <FooterComponent />
+    </>
   );
 }
