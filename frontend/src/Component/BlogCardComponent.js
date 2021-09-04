@@ -1,5 +1,6 @@
 import React from "react";
 import "../Screens/HomeScreen.scss";
+import blog__bg from "../Assests/blog__bg.png";
 export default function BlogCardComponent({ tag, heading, para }) {
   return (
     <>
@@ -12,7 +13,7 @@ export default function BlogCardComponent({ tag, heading, para }) {
             <a style={{ color: "#33c257" }}>Read more</a>
           </div>
           <div className="blog__content__right">
-            <img src="" alt="" />
+            <img src={blog__bg} alt="" />
           </div>
         </div>
         <div className="line"></div>
