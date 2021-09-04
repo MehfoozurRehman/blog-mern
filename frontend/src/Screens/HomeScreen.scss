@@ -6,11 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .content__Right {
-  background-image: url(../Assests/main__bg.png);
-  background-repeat: no-repeat;
   width: 40%;
-  height: 65vh;
-  align-items: center;
 }
 .content__left {
   width: 50%;
@@ -215,4 +211,57 @@ input {
   flex-direction: row;
   align-items: center;
   font-weight: bold;
+}
+
+@media (max-width: 920px) {
+  .blog__content {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .container__content {
+    flex-direction: column;
+  }
+  .content__left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .content__right {
+    width: 100%;
+  }
+  .search__box {
+    width: 100%;
+  }
+  .blog__container {
+    padding: 0px;
+  }
+  .blog__content__right {
+    width: 100%;
+    margin-top: 22px;
+  }
+  .blog__content__left {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .latest_post__section {
+    width: 100%;
+  }
+  .latest__blogs {
+    flex-direction: column;
+  }
+  .latest__post__card {
+    width: 100%;
+  }
+  .subscribe__box {
+    width: 80%;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__container__center {
+    width: 100%;
+  }
+  .footer__container__left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

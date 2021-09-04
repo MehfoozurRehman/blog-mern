@@ -2,7 +2,7 @@ import React from "react";
 import BlogCardComponent from "../Component/BlogCardComponent";
 import BottonComponent from "../Component/BottonComponent";
 import HeaderComponent from "../Component/HeaderComponent";
-
+import main__bg from "../Assests/main__bg.png";
 import "./HomeScreen.scss";
 import LatestBlogCardComponent from "../Component/LatestBlogCardComponent";
 import FooterComponent from "../Component/FooterComponent";
@@ -27,7 +27,7 @@ export default function HomeScreen() {
           </div>
         </div>
         <div className="content__Right">
-          <img src="" alt="" srcset="" />
+          <img src={main__bg} width="100%" alt="" srcset="" />
         </div>
       </div>
       <div className="border">
