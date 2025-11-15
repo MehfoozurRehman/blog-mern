@@ -4,6 +4,6 @@
     "start": "concurrently \"cd backend && npm i && npm run dev\" \"cd frontend && yarn && yarn start\""
   },
   "dependencies": {
-    "concurrently": "^7.4.0"
+    "concurrently": "^7.6.0"
   }
 }
