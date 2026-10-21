@@ -17,8 +17,7 @@ app.use(cors());
 
 // mongodb config
 
-const connection__url =
-  "mongodb+srv://admin:HZGUiPTU2E-C!5S@cluster0.turqt.mongodb.net/blog_db?retryWrites=true&w=majority";
+const connection__url = process.env.MONGODB_URI;
 
 mongoose.connect(connection__url, {
   useNewUrlParser: true,
